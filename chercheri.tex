@@ -18,6 +18,8 @@
 %% or LuaLaTeX.
 % \documentclass[10pt,a4paper,academicons]{altacv}
 
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
@@ -44,10 +46,14 @@
 
 % Change the colours if you want to
 \definecolor{Blue}{HTML}{4B85E1}
+\definecolor{Black}{HTML}{000000}
 \definecolor{Orange}{HTML}{0A1963}
 \definecolor{LightGrey}{HTML}{666666}
 \colorlet{heading}{Blue}
+\colorlet{vide}{Black}
 \colorlet{accent}{Blue}
+\colorlet{profile}{Orange}
+\colorlet{makecvheader}{Blue}
 \colorlet{emphasis}{Orange}
 \colorlet{body}{LightGrey}
 
@@ -56,22 +62,20 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
+\usepackage[colorlinks]{hyperref}
 
 \begin{document}
 \name{Mohamed CHERCHERI}
-\tagline{Ingénieur informatique}
+\tagline{Élève ingénieur à Télécom SudParis.}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-\photo{2 cm}{DSC_0350}
-\personalinfo{%
-  % Not all of these are required!
-  % You can add your own with \printinfo{symbol}{detail}
+%\photo{2 cm}{DSC_0350}
+\personalinfo{
   \email{mohamed.chercheri@telecom-sudparis.eu}
   \phone{+33 06 24 54 28 47}
-  \mailaddress{9, Rue Charles Fourier, 91000 Evry}
+  \mailaddress{14, Rue Charles Fourier, 91000 Evry}
   \location{Paris, France}
-  \linkedin{linkedin.com/in/chercheri-mohamed}
-  \github{github.com/chercheri} % I'm just making this up though.
-%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  \href{http://linkedin.com/in/chercheri-mohamed}{ \color{Orange}{\linkedin{chercheri-mohamed}}}
+  \href{https://github.com/chercheri}{ \color{Orange}{\github{chercheri}}}
 }
 
 %% Make the header extend all the way to the right, if you want.
@@ -86,87 +90,68 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Expérience Professionnelle}
+\cvsection[page1sidebar]{Profil}
+\begin{quote}
+``Actuellement élève ingénieur en
+troisième année à Télécom SudParis spécialisé en Architecture de services répartis.
 
-\cvevent{Stagiaire : Stage de formation humaine}{Tunisie Télécom}{Juillet 2017}{Tunis, Tunisie}
+Étant travailleur, organisé et capable
+de faire preuve d'autonomie, je suis à
+la recherche d'un stage de fin d'études
+de 6 mois (à partir de Février
+2020).''
+\end{quote}
+
+\cvsection{Formation}
+
+\cvevent{Cycle ingénieur}{Télécom SudParis, France}{Septembre 2018 -- 2020}{}
 \begin{itemize}
-\item Premier pas dans le monde professionnel.
-\item Participation à la réparation des lignes téléphoniques des abonnés.
+\item Double-diplomation(Sup'Com, Tunisie) et Télécom SudParis (TSP)
+\item Spécialisation en architecture de services informatiques répartis (ASR)
 \end{itemize}
-
-\cvsection{Expérience académique}
-
-\cvevent{Projet Cassiopée}{}{Janvier -- Juillet 2019}{Télécom SudParis}
-\begin{itemize}
-\item Développement d'une plateforme B2B.
-\item Technologies : PHP,HTML,CSS,React.js,SQLite.
-\end{itemize}
-
 \divider
 
-\cvevent{Projet web}{}{septembre -- Décembre 2018}{Télécom SudParis}
+\cvevent{Cycle ingénieur}{École Supérieur des Communications de Tunis (Sup'Com), Tunisie}{Septembre 2016 -- Juin 2018}{}
 \begin{itemize}
-\item Développement d'un site web pour une agence de voyage qui fournit des offres aux clients.
-\item Technologies : PHP,HTML,CSS,Twig,SQLite.
+\item Spécialisation en système des télécoms(SYSTEL).
 \end{itemize}
-
 \divider
 
-\cvevent{Projet PISTE}{}{janvier -- Juin 2018}{Sup'Com, Tunisie}
+\cvevent{Cycle préparatoire}{Institut Préparatoire aux Études d'Ingénieurs El Manar (IPEIEM), Tunisie}{Septembre 2014 -- Juin 2016}{}
 \begin{itemize}
-\item Solution IOT de perception multi-capteurs.
-\item Suivie d'une personne dépendante à travers des capteurs et une interface web.    
-\item Technologies : Angular,NodeJS,MongoDB.
+\item Diplôme d'études universitaires de premier cycle en MP.
 \end{itemize}
-
 \divider
 
-\cvevent{Projet de développement mobile}{}{Septembre -- Décembre 2017}{Sup'Com, Tunisie}
+\cvevent{Baccalauréat}{Lycée les pères blancs, Tunisie}{juin 2014}{}
 \begin{itemize}
-\item Application mobile qui facilite le suivi parental de la vie scolaire des enfants.    
-\item Technologies : JAVA,XML,MySQL en utilisant AndroidStudio.
+\item Section: Mathématique - Moyenne: 15.96/20
 \end{itemize}
 
-\cvsection{Compétences Techniques}
+\cvsection{Langues}
+\cvskill{Français}{     DELF (B2) - VOLTAIRE}{5}
+\cvskill{Arabe}{}{5}
+\cvskill{Anglais}{      TOEIC (860/990)}{3}
+\cvskill{Espagnol}{}{2}
 
-\cvtag{C/C++} 
-\cvtag{Java/J2EE}
-\cvtag{PHP} 
-\cvtag{JavaScript}
-\cvtag{HTML}
-\cvtag{CSS}
+%\cvsection{Life Philosophy}
+%\begin{quote}
+%``If you don't have any shadows, you're not standing in the %light.''
+%\end{quote}
 
-%\divider\smallskip
+\cvsection{Réalisations}
+\cvachievement{\faTrophy}{Résoudre une page de 100 problèmes}{Résolution d'une page de 100 problèmes de programmation sur la plateforme Codeforces }
+\cvachievement{\faTrophy}{Étudier en France}{Avoir un rang 25/200 qui m'a offert une possibilité de double diplomation à Télécom Sud Paris}
+\cvachievement{\faTrophy}{Étudier dans la deuxième meilleure école en Tunisie}{Un rang de 150/2300 élevés au concours national d’entrée aux cycles d’ingénieurs. }
+\cvachievement{\faTrophy}{Champion de l'IPEIEM}{Vainqueur du championnat de football de l'institut préparatoire compétition de 32 équipes. }
 
-\cvtag{Symfony}
-\cvtag{Spring}
-\cvtag{Angular}
-\cvtag{React.js}
-\cvtag{Maven}
-\cvtag{Hibernate}
-%\divider\smallskip
-\cvtag{MySQL}
+\cvsection{CENTRES D’INTÉRÊT}
 
-%\divider\smallskip
-\cvtag{Linux/Ubuntu}
-\cvtag{Windows}
-
-\cvsection{Extra Scolaire}
-
-\cvevent{Membre du comité logistique du forum}{}{Janvier 2017 -- Juin 2018}{Sup'Com}
-\begin{itemize}
-\item Participation, avec un groupe d’étudiants, à la réalisation du forum
-annuel et de la journée portes ouvertes.
-\end{itemize}
-
-\divider
-
-\cvevent{Club: Sup'Story}{}{Novembre 2016 -- Juin 2018}{Sup'Com}
-\begin{itemize}
-\item Fondateur du club Sup'Story qui a pour but la valorisation du patrimoine de Sup'Com.
-\item Collecte de la mémoire de Sup'Com à travers les photos, les interviews.
-\end{itemize}
-
+\cvtag{Cuisine}
+\cvtag{Voyage} 
+\cvtag{Football} 
+\cvtag{Natation}
+\cvtag{Programmation}
 
 \clearpage
 

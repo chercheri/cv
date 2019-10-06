@@ -171,7 +171,7 @@
   \endgroup\medskip
 }
 
-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
+\renewenvironment{quote}{\color{profile}\itshape\large}{\par}
 
 \newcommand{\cvsection}[2][]{%
   \bigskip%
@@ -212,7 +212,7 @@
 \newcommand{\cvskill}[3]{%
 \textcolor{emphasis}{\textbf{#1}}{  \textbf{#2}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#3}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+  \space{\ifnumgreater{\x}{#3}{\color{body!10}}{\color{accent}}\ratingmarker}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
