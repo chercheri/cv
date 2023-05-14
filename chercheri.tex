@@ -61,18 +61,18 @@
 % for \cvskill if you want to
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+\usepackage{comment}
 
 \usepackage[colorlinks]{hyperref}
 
 \begin{document}
 \name{Mohamed CHERCHERI}
-\tagline{Élève ingénieur à Télécom SudParis.}
+\tagline{Ingénieur Informatique.}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-%\photo{2 cm}{meCv}
+\photo{2 cm}{meCv}
 \personalinfo{
-  \email{mohamed.chercheri@telecom-sudparis.eu}
-  \phone{+33 06 24 54 28 47}
-  \mailaddress{5, Clos de la Cathédrale, 91000 Evry}
+  \email{mohamed.chercheri@yahoo.com}
+  \phone{+33 6 24 54 28 47}
   \location{Paris, France}
   \href{http://linkedin.com/in/chercheri-mohamed}{ \color{Orange}{\linkedin{chercheri-mohamed}}}
   \href{https://github.com/chercheri}{ \color{Orange}{\github{chercheri}}}
@@ -92,32 +92,24 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Profil}
 \begin{quote}
-``Actuellement élève ingénieur en
-troisième année à Télécom SudParis spécialisé en Architecture de services répartis.
-
-Étant travailleur, organisé et capable
-de faire preuve d'autonomie, je suis à
-la recherche d'un stage de fin d'études
-de 6 mois (à partir de Février
-2020).''
+Actuellement consultant informatique de 3 ans d'experience chez Artik Consulting.
+Étant polyvalent, technophile et capable de faire preuve d'autonomie, je suis à la recherche d'une opportunité  dans le domaine de l'ingénierie des données.
 \end{quote}
 
 \cvsection{Formation}
 
-\cvevent{Cycle ingénieur}{Télécom SudParis, France}{Septembre 2018 -- 2020}{}
-\begin{itemize}
-\item Double-diplomation (Sup'Com, Tunisie) et Télécom SudParis (TSP)
-\item Spécialisation en architecture de services informatiques répartis (ASR)
-\end{itemize}
-\divider
 
-\cvevent{Cycle ingénieur}{École Supérieur des Communications de Tunis (Sup'Com), Tunisie}{Septembre 2016 -- Juin 2018}{}
+\cvevent{Cycle ingénieur}{Sup'Com, Tunisie    -    Télécom SudParis, France}{Septembre 2016 -- 2020}{}
 \begin{itemize}
+\item Double-diplomation : Télécom SudParis (TSP) et l'École supérieure des communications de Tunis (Sup'Com)
+\item Spécialisation en architecture de services informatiques répartis (ASR)
 \item Spécialisation en système des télécoms (SYSTEL).
 \end{itemize}
-\divider
 
-\cvevent{Cycle préparatoire}{Institut Préparatoire aux Études d'Ingénieurs El Manar (IPEIEM), Tunisie}{Septembre 2014 -- Juin 2016}{}
+% ------------------------------- bloc commenté ------------------------------- %
+\begin{comment}
+
+\cvevent{e}{Institut Préparatoire aux Études d'Ingénieurs El Manar (IPEIEM), Tunisie}{Septembre 2014 -- Juin 2016}{}
 \begin{itemize}
 \item Diplôme d'études universitaires de premier cycle en MP.
 \end{itemize}
@@ -128,30 +120,71 @@ de 6 mois (à partir de Février
 \item Section: Mathématique - Moyenne: 15.96/20
 \end{itemize}
 
-\cvsection{Langues}
-\cvskill{Français}{     DELF (B2) - VOLTAIRE}{5}
-\cvskill{Arabe}{}{5}
-\cvskill{Anglais}{      TOEIC (860/990)}{3}
-\cvskill{Espagnol}{}{2}
+\end{comment}
+% ------------------------------------------------------------------------------------ %
 
-%\cvsection{Life Philosophy}
-%\begin{quote}
-%``If you don't have any shadows, you're not standing in the %light.''
-%\end{quote}
+% ------------------------------- bloc commenté ------------------------------- %
+\begin{comment}
+\cvsection{Life Philosophy}
+\begin{quote}
+``If you don't have any shadows, you're not standing in the light.''
+\end{quote}
+\end{comment}
+% ------------------------------------------------------------------------------------ %
+
+\cvsection{Compétences Techniques}
+\cvtag{Microsoft Azure} \cvtag{AWS}  \cvtag{OpenShift} \cvtag{3DS OUTSCALE}
+
+\divider
+
+\cvtag{Kubernetes} \cvtag{Helm}\cvtag{Docker}\cvtag{Maven}\cvtag{Git}
+
+\divider
+
+\cvtag{Java}\cvtag{Python}\cvtag{Scala}\cvtag{Go}\cvtag{C/C++}
+
+
+\divider
+
+\cvtag{Kafka} \cvtag{Kafka Stream} \cvtag{Apache Spark} \cvtag{Avro}
+
+\divider
+
+\cvtag{SpringBoot}\cvtag{Angular}\cvtag{Mockito}\cvtag{SonarQube}
+
+\divider
+
+\cvtag{MySQL}\cvtag{PostgreSQL}\cvtag{Cassandra}
+
+
+\cvsection{Méthodologies}
+\cvtag{Agile} \cvtag{Scrum} \cvtag{SAFe}
+
 
 \cvsection{Réalisations}
+\cvachievement{\faTrophy}{Encadrement de stagiaire}{Accompagnement d'un stagiaire lors de son stage de fin d'étude chez Artik.}
+\cvachievement{\faTrophy}{Un jeune TechLead}{ Après une année couronnée de succès sur ma première mission chez La Poste, j'ai eu le rôle de Techlead dans une équipe composée de 6 développeurs }
 \cvachievement{\faTrophy}{Résoudre une page de 100 problèmes}{Résolution d'une page de 100 problèmes de programmation sur la plateforme Codeforces }
-\cvachievement{\faTrophy}{Étudier en France}{Avoir un rang 25/200 qui m'a offert une possibilité de double diplomation à Télécom Sud Paris}
+% ------------------------------- bloc commenté ------------------------------- %
+\begin{comment}
 \cvachievement{\faTrophy}{Étudier dans la deuxième meilleure école en Tunisie}{Un rang de 150/2300 élevés au concours national d’entrée aux cycles d’ingénieurs. }
 \cvachievement{\faTrophy}{Champion de l'IPEIEM}{Vainqueur du championnat de football de l'institut préparatoire compétition de 32 équipes. }
+\end{comment}
+% ------------------------------------------------------------------------------------ %
+
+\cvsection{Langues}
+\cvskill{Français}{	DELF (B2) - VOLTAIRE}{5}
+\cvskill{Anglais}{	TOEIC (860/990)}{3}
+\cvskill{Espagnol}{}{1}
+
 
 \cvsection{CENTRES D’INTÉRÊT}
 
-\cvtag{Cuisine}
 \cvtag{Voyage} 
 \cvtag{Football} 
 \cvtag{Natation}
 \cvtag{Programmation}
+\cvtag{Gaming}
 
 \clearpage
 
